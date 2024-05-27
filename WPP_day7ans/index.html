@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String Modifier</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>String Modifier</h1>
+      <label for="input-string">Enter a string:</label>
+      <input type="text" id="input-string" placeholder="Enter a string..." />
+      <button onclick="modifyString()">Modify String</button>
+      <p id="output"></p>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+      function modifyString() {
+        const inputString = document.getElementById('input-string').value;
+        const modifiedString = createString(inputString);
+        document.getElementById('output').textContent = modifiedString;
+      }
+    </script>
+  </body>
+</html>
